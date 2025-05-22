@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Jake Butcher</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="styles.css">
+        <!-- Update this link with Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel=""stylesheet>
+
+    </head>
+
+
+    <body>
+        <header>
+            <div class="logo">
+                <!-- TO DO - add Logo -->
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="menu"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__link">
+                    <li class="nav__item"><a href="#home">Home</a></li>
+                    <li class="nav__item"><a href="#services">My Services</a></li>
+                    <li class="nav__item"><a href="#about">About Me</a></li>
+                    <li class="nav__item"><a href="#work">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Jake Butcher</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Cloud Engineer</p>
+            <img src="Assets/" alt="a picture of Jake Butcher" class="intro__img">
+        </section>
+
+
+
+        <!-- My Info -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">Introduction</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Enterprise CMS</h3>
+                        <p>I have hands-on experience supporting and deploying enterprise content management systems such as Microsoft SharePoint and 
+                            Orchard CMS in complex environments spanning on-premises, hybrid, and Azure cloud platforms. Recently I have been involved 
+                            in managing configuration changes, access controls, and content workflows for high-security clients under strict SLAs.</p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3>Automation and IaC</h3>
+                        <p>In addition, I actively work with Infrastructure as Code (IaC) using Terraform to provision and manage Azure infrastructure 
+                            in a consistent and scalable manner. I also leverage automation and scripting tools such as PowerShell and Bash for 
+                            operational tasks and environment setup, reducing efforts on recurring jobs, and improving productivity for teams.</p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3>CI/CD</h3>
+                        <p>For application delivery, I’ve implemented CI/CD pipelines using GitHub Actions, integrating Azure Monitor and Application 
+                            Insights to track performance and errors. This experience enables me to support modern DevOps practices and ensure reliable, 
+                            automated deployments.</p>
+                </div> <!-- / service -->
+            </div>
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+
+
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">About Me</h2>
+            <p class="section__subtitle section__subtitle--about">Professional Profile</p>
+            
+            <div class="about-me__body">
+                <p>I'm an IT professional with over 3 years of experience in enterprise environments, specializing in application support, cloud 
+                    operations, and automation. I’ve supported CMS platforms like SharePoint and Orchard in hybrid and Azure-hosted setups, with 
+                    a strong focus on reliability, performance, and secure operations.</p>
+                <p>My work revolves around supporting and deploying applications in the cloud using tools like Terraform, GitHub Actions, and Azure 
+                    Monitor. I enjoy building efficient, scalable environments and automating routine tasks to reduce downtime and improve consistency 
+                    across systems.</p>
+                <p>I’m passionate about learning and applying new technologies, especially in cloud engineering and DevOps. With certifications like 
+                    AZ-900, AZ-104, and CKA, and an ongoing BSc in Computing and IT, I'm constantly expanding my capabilities to take on more complex 
+                    challenges in cloud infrastructure and automation.</p>
+            </div>
+            <!-- TO DO - add image -->
+            <img src="Assets/" alt="image" class="about-me__img">
+        </section>
+
+
+
+        <!-- My Work -->
+         <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Portfolio</h2>
+            <p class="section__subtitle section__subitile--work"></p>
+
+            <div class="portfolio">
+                <!-- Portfolio 01 -->
+                <a href="#" class="portfolio__item">
+                    <img src="Assets/Office Color.png" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio 02 -->
+                <a href="#" class="portfolio__item">
+                    <img src="Assets/Office Color.png" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio 03 -->
+                <a href="#" class="portfolio__item">
+                    <img src="Assets/Office Color.png" alt="" class="portfolio__img">
+                </a>
+            </div>
+         </section>
+
+
+
+         <!-- Footer -->
+         <footer class="footer">
+        <ul class="social-list">
+            <!-- TO DO - add info -->
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/JakeButcher" target="_blank">GitHub</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="mailto:j.matthewbutcher@gmail.com">Email</a></li>
+        </ul>
+        </footer>
+
+
+        <script src="JS/Index.js"></script>
+
+    </body>
+</html>

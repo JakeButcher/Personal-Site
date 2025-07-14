@@ -173,8 +173,8 @@ h3 {font-size: var(--fs-h3)}
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -227,7 +227,7 @@ h3 {font-size: var(--fs-h3)}
 }
 
 .nav-open .menu {
-    transform: 750ms cubic-bezier(.5, 0, .5, 1);
+    transform: 200ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .menu {
@@ -238,11 +238,8 @@ h3 {font-size: var(--fs-h3)}
 .menu,
 .menu::before,
 .menu::after {
-    background: var(--clr-accent);
-    width: 2em; 
-    height: 3px;
     border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    transition: transform 20ms ease-in-out;
 }
 
 .menu::before,

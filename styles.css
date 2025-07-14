@@ -11,11 +11,11 @@
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-bold: 600;
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #eb0707;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -83,6 +83,36 @@ img {
     outline-offset: 3px;
 }
 
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0)
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.social-list__item:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.social-list__item:nth-child(3) {
+    transition-delay: 400ms;
+}
+
 
 
 /* Typography */
@@ -130,6 +160,8 @@ h3 {font-size: var(--fs-h3)}
 
 
 /* Header */
+
+/* Redoing Nav Menu
 
 .header {
     display: flex;
@@ -200,12 +232,12 @@ h3 {font-size: var(--fs-h3)}
     transform: 750ms cubic-bezier(.5, 0, .5, 1);
 }
 
-
-
 .menu {
    display: block;
    position: relative;
 }
+
+/* removed button 
 
 .menu,
 .menu::before,
@@ -216,6 +248,10 @@ h3 {font-size: var(--fs-h3)}
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
+
+*/
+
+/*
 
 .menu::before,
 .menu::after {
@@ -233,6 +269,7 @@ h3 {font-size: var(--fs-h3)}
     bottom: 6px;
 }
 
+*/
 
 /* Intro Section */
 
@@ -240,14 +277,19 @@ h3 {font-size: var(--fs-h3)}
     position: relative;
 }
 
+/* Photo has been removed 
+
 .intro__img {
     box-shadow: var(--bs);
+    height: 240px;
 }
+
+*/
 
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
+        width: max-content;
         margin: 0 auto;
         column-gap: 1em;
         grid-template-areas: 
@@ -256,20 +298,22 @@ h3 {font-size: var(--fs-h3)}
         grid-template-columns: min-content max-content;
     }
 
+/* Photo has been removed    
     .intro__img {
         grid-area: img;
         min-width: 250px;
         position: relative;
         z-index: 2;
     }
+*/
 
     .section__subtitle--intro {
-        align-self: start;
+        align-self: center;
         grid-column: -1 / 1;
         grid-row: 2;
-        text-align: right;
+        text-align: center;
         position: relative;
-        left: -1.5em;
+        left: -1.8em;
         width: calc(100% + 1.5em);
     }
 }
@@ -376,6 +420,16 @@ h3 {font-size: var(--fs-h3)}
     text-align: center;
 }
 
+.section__title--work::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.5;
+}
+
 .section__subtitle--work{
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
@@ -408,6 +462,7 @@ h3 {font-size: var(--fs-h3)}
     transform: scale(1.2);
     opacity: .75;
 }
+
 
 
 /* Footer Section */
